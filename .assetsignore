@@ -1,0 +1,10 @@
+node_modules
+.git
+.gitignore
+src
+tailwind.config.js
+package.json
+package-lock.json
+README.md
+.DS_Store
+.wrangler
