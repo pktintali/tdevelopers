@@ -1,27 +1,58 @@
-# TDevelopers — Brand Landing Page
+# TDevelopers — tdevelopers.in
 
-A bold, modern, mobile-first landing page for **TDevelopers** — the indie mobile app studio of Pradeep Kumar.
+The official site of **TDevelopers**, an indie mobile app studio.
+Static, zero-JS-framework, deployed on Cloudflare Pages.
 
 ## Stack
-- HTML + CSS + vanilla JS · zero build
-- Tailwind via CDN
-- Google Fonts (Inter + Bricolage Grotesque)
+- Plain HTML + CSS + a tiny vanilla JS file (`assets/apps.js`)
+- Tailwind CSS v3 (compiled to `assets/tailwind.css`)
+- Google Fonts: Inter + Bricolage Grotesque
 
-## Run
+## Develop
+
 ```bash
-cd /Users/pradeepkumar8/development/web/personal/tdevelopers/tdevelopers
-python3 -m http.server 5173
-# open http://localhost:5173
+npm install        # one-time
+npm run dev        # tailwind watcher → assets/tailwind.css
+npm run serve      # python http server on :5173
 ```
 
-## Files
-- [index.html](index.html) — page structure
-- [assets/styles.css](assets/styles.css) — custom polish
-- [assets/apps.js](assets/apps.js) — apps catalog + rendering
-- [assets/logo.jpg](assets/logo.jpg) — brand mark (512px)
+Open http://localhost:5173 — Tailwind classes recompile on save.
 
-## Edit apps
-Open [assets/apps.js](assets/apps.js) and modify the `apps` array. Icons are sourced from Play Store CDN.
+## Build
 
-## Deploy
-Static site — drop on Vercel, Netlify, Cloudflare Pages or GitHub Pages. No build step.
+```bash
+npm run build      # minified production tailwind.css
+```
+
+## Deploy (Cloudflare Pages)
+
+Connect this GitHub repo to Cloudflare Pages with:
+
+- **Framework preset:** None
+- **Build command:** `npm run build`
+- **Output directory:** `/` (project root)
+- **Node version:** `20` or higher
+
+Then add the custom domain `tdevelopers.in` from the Pages → *Custom domains* tab.
+SSL is automatic.
+
+## Project layout
+
+```
+.
+├── index.html              # landing page
+├── 404.html                # custom not-found
+├── robots.txt
+├── sitemap.xml
+├── _headers                # Cloudflare Pages cache + security headers
+├── package.json
+├── tailwind.config.js
+├── src/input.css           # tailwind entrypoint
+└── assets/
+    ├── tailwind.css        # generated, committed
+    ├── styles.css          # hand-written component styles
+    ├── apps.js             # apps catalog + render
+    ├── pradeep.jpg
+    ├── logo.jpg
+    └── icons/              # local app icons (Play Store CDN was blocked)
+```

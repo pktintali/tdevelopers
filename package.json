@@ -1,0 +1,14 @@
+{
+  "name": "tdevelopers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TDevelopers — indie mobile app studio landing site",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/tailwind.css --minify",
+    "serve": "python3 -m http.server 5173"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
