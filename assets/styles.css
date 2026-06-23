@@ -617,3 +617,102 @@ body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; 
 @media (prefers-reduced-motion: reduce) {
   .float-icon, .hero-cluster__ring { animation: none; }
 }
+
+/* ============== Toolkit page (/my-tools) ============== */
+.tool-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  padding: 1.6rem 1.6rem 1.75rem;
+  background: linear-gradient(165deg, rgba(255,255,255,0.035), rgba(255,255,255,0.012));
+  border: 1px solid rgba(255,255,255,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform .35s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;
+}
+.tool-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(220, 20, 20, 0.30);
+  background: linear-gradient(165deg, rgba(220,20,20,0.05), rgba(255,255,255,0.02));
+}
+.tool-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(600px circle at var(--mx,50%) var(--my,0%), rgba(255,80,80,0.10), transparent 40%);
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.tool-card:hover::after { opacity: 1; }
+
+/* Featured "most used" card */
+.tool-card--featured {
+  border-color: rgba(245,158,11,0.45);
+  background: linear-gradient(165deg, rgba(245,158,11,0.07), rgba(255,255,255,0.012));
+}
+.tool-card--featured:hover {
+  border-color: rgba(245,158,11,0.65);
+  background: linear-gradient(165deg, rgba(245,158,11,0.10), rgba(255,255,255,0.02));
+}
+.tool-card--featured::after {
+  background: radial-gradient(600px circle at var(--mx,50%) var(--my,0%), rgba(245,158,11,0.14), transparent 40%);
+}
+
+.tool-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.85rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 10px 22px -12px rgba(0,0,0,0.7);
+}
+
+.tool-name {
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.tool-badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 0.28rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.tool-blurb {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+}
+
+/* Badge color variants */
+.tool-badge--purple { color:#c4b5fd; background:rgba(167,139,250,0.12); border-color:rgba(167,139,250,0.22); }
+.tool-badge--green  { color:#6ee7b7; background:rgba(52,211,153,0.12); border-color:rgba(52,211,153,0.22); }
+.tool-badge--blue   { color:#93c5fd; background:rgba(96,165,250,0.12); border-color:rgba(96,165,250,0.22); }
+.tool-badge--amber  { color:#fcd34d; background:rgba(251,191,36,0.12); border-color:rgba(251,191,36,0.22); }
+.tool-badge--pink   { color:#f0abfc; background:rgba(232,121,249,0.12); border-color:rgba(232,121,249,0.22); }
+.tool-badge--teal   { color:#5eead4; background:rgba(45,212,191,0.12); border-color:rgba(45,212,191,0.22); }
+.tool-badge--yellow { color:#fde047; background:rgba(234,179,8,0.14); border-color:rgba(234,179,8,0.24); }
+.tool-badge--gold   { color:#fbbf24; background:rgba(245,158,11,0.16); border-color:rgba(245,158,11,0.30); }
+
+@media (max-width: 640px) {
+  .tool-card { padding: 1.4rem 1.4rem 1.55rem; }
+  .tool-name { font-size: 1.12rem; }
+}

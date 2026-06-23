@@ -3,15 +3,14 @@
 
 const apps = [
   {
-    name: "TryOn AI",
-    tagline: "Try on clothes & outfits",
-    blurb: "Virtually try outfits on yourself in seconds, powered by AI.",
-    rating: 4.3,
-    downloads: "10K+",
-    category: "Shopping",
-    icon: "assets/icons/tryon.png",
-    play: "https://play.google.com/store/apps/details?id=com.ai.tryon.clothes.outfits",
-    appstore: "https://apps.apple.com/us/app/tryon-ai-try-on-clothes/id6752288197"
+    name: "Tattoi",
+    tagline: "AI Tattoo Generator",
+    blurb: "Design your next tattoo in seconds. Type any idea and AI generates tattoo art and stencils — see your ink before you commit.",
+    downloads: "New",
+    category: "Lifestyle",
+    icon: "assets/icons/tattoi.png",
+    play: "https://play.google.com/store/apps/details?id=com.tdevs.ai.tattoo.generator",
+    appstore: "https://apps.apple.com/us/app/ai-tattoo-generator-tattoi/id6775187493"
   },
   {
     name: "FactJano",
@@ -46,7 +45,7 @@ const apps = [
     appstore: "https://apps.apple.com/us/app/quiz-maker-ai-pocketmind/id6740739787"
   },
   {
-    name: "Breava",
+    name: "Sooz",
     tagline: "Breathwork & Calm",
     blurb: "A simple breathing app for stress, sleep and focus. No clutter — just breath.",
     rating: 4.5,

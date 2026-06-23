@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>My App Dev Toolkit — TDevelopers</title>
+  <meta name="description" content="The 9 tools I rely on to research, build, design, and grow my Android & iOS apps — from keyword research and analytics to backend, payments and AI." />
+  <meta name="theme-color" content="#0b0b0e" />
+  <meta name="author" content="Pradeep Kumar" />
+  <link rel="canonical" href="https://tdevelopers.in/my-tools" />
+
+  <meta property="og:title" content="My App Dev Toolkit — TDevelopers" />
+  <meta property="og:description" content="The 9 tools I rely on to research, build, design, and grow my apps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tdevelopers.in/my-tools" />
+  <meta property="og:image" content="https://tdevelopers.in/assets/logo.jpg" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:site_name" content="TDevelopers" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="My App Dev Toolkit — TDevelopers" />
+  <meta name="twitter:description" content="The 9 tools I rely on to research, build, design, and grow my apps." />
+  <meta name="twitter:image" content="https://tdevelopers.in/assets/logo.jpg" />
+
+  <link rel="icon" type="image/jpeg" href="/assets/logo.jpg" />
+  <link rel="apple-touch-icon" href="/assets/logo.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/tailwind.css" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+
+<body class="bg-ink-950 text-white font-sans antialiased selection:bg-brand-600 selection:text-white overflow-x-hidden">
+
+  <!-- Background — neutral with one tiny accent -->
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-40 -left-20 h-[28rem] w-[28rem] rounded-full bg-brand-600/15 blur-[110px]"></div>
+    <div class="absolute top-1/2 -right-40 h-[26rem] w-[26rem] rounded-full bg-indigo-500/[0.05] blur-[110px]"></div>
+    <div class="absolute inset-0 grid-bg opacity-[0.025]"></div>
+    <div class="absolute inset-0 noise opacity-[0.04]"></div>
+  </div>
+
+  <!-- ============== NAV (floating pill) ============== -->
+  <header class="fixed top-3 sm:top-5 left-0 right-0 z-50 px-4">
+    <nav class="mx-auto max-w-5xl flex items-center justify-between gap-3 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full border border-white/[0.07] bg-ink-900/70 backdrop-blur-2xl shadow-[0_8px_30px_rgba(0,0,0,0.4)]">
+
+      <a href="/" class="flex items-center gap-2.5 pl-1.5 sm:pl-2">
+        <span class="relative inline-flex h-8 w-8 items-center justify-center rounded-lg overflow-hidden ring-1 ring-white/10">
+          <img src="/assets/logo.jpg" alt="" class="h-full w-full object-cover" />
+        </span>
+        <span class="font-display font-bold text-white text-[15px] sm:text-base tracking-tight">TDevelopers</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-1 text-[13.5px] text-white/65">
+        <a href="/#apps" class="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/5 transition">Apps</a>
+        <a href="/#about" class="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/5 transition">About</a>
+        <a href="/#values" class="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/5 transition">Principles</a>
+        <a href="/#contact" class="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/5 transition">Contact</a>
+      </div>
+
+      <a href="/#apps"
+         class="inline-flex items-center gap-1.5 rounded-full bg-white text-ink-950 text-[13px] sm:text-sm font-semibold pl-3.5 pr-2 py-1.5 sm:py-2 hover:bg-white/90 transition">
+        My Apps
+        <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-600 text-white">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ============== HEADER + TOOLS GRID ============== -->
+  <section class="relative pt-32 sm:pt-40 lg:pt-44 pb-20 sm:pb-24">
+    <div class="mx-auto max-w-6xl px-5 sm:px-8">
+
+      <div class="text-center">
+        <div class="section-eyebrow">My toolkit</div>
+        <h1 class="section-title">
+          My App Dev <span class="text-brand-500">Toolkit</span>
+        </h1>
+      </div>
+
+      <div class="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+
+        <!-- 1 — ASTRO -->
+        <article class="tool-card reveal group" data-tilt>
+          <span class="tool-icon" aria-hidden="true">🔍</span>
+          <div class="flex flex-col gap-2">
+            <h3 class="tool-name">ASTRO</h3>
+            <span class="tool-badge tool-badge--purple">Keyword Research</span>
+          </div>
+          <p class="tool-blurb">My go-to for app store keyword research. Helps me find high-volume, low-competition keywords to rank my apps higher on the App Store and Play Store.</p>
+        </article>
+
+        <!-- 2 — Sensor Tower -->
+        <article class="tool-card reveal group" data-tilt>
+          <span class="tool-icon" aria-hidden="true">💰</span>
+          <div class="flex flex-col gap-2">
+            <h3 class="tool-name">Sensor Tower</h3>
+            <span class="tool-badge tool-badge--green">Revenue Intelligence</span>
+          </div>
+          <p class="tool-blurb">I use this to see estimated revenue of competing apps. Great for validating ideas and understanding market potential before building.</p>
+        </article>
+
+        <!-- 3 — Mixpanel -->
+        <article class="tool-card reveal group" data-tilt>
+          <span class="tool-icon" aria-hidden="true">📊</span>
+          <div class="flex flex-col gap-2">
+            <h3 class="tool-name">Mixpanel</h3>
+            <span class="tool-badge tool-badge--blue">Analytics</span>
+          </div>
+          <p class="tool-blurb">Tracks user behaviour inside my apps, funnels, retention, and feature usage. Essential for data-driven product decisions.</p>
+        </article>
+
+        <!-- 4 — AWS -->
+        <article class="tool-card reveal group" data-tilt>
+          <span class="tool-icon" aria-hidden="true">☁️</span>
+          <div class="flex flex-col gap-2">
+            <h3 class="tool-name">AWS</h3>
+            <span class="tool-badge tool-badge--amber">Backend &amp; Infra</span>
+          </div>
+          <p class="tool-blurb">All my backend runs on AWS Serverless, Lambda, API Gateway, DynamoDB. Scales automatically and costs nearly nothing at low traffic.</p>
+        </article>
+
+        <!-- 5 — RevenueCat -->
+        <article class="tool-card reveal group" data-tilt>
+          <span class="tool-icon" aria-hidden="true">💳</span>
+          <div class="flex flex-col gap-2">
+            <h3 class="tool-name">RevenueCat</h3>
+            <span class="tool-badge tool-badge--pink">Payments</span>
+          </div>
+          <p class="tool-blurb">Handles all in-app purchase and subscription logic across iOS and Android. No more wrestling with StoreKit or Billing, just plug and earn.</p>
+        </article>
+
+        <!-- 6 — Canva -->
+        <article class="tool-card reveal group" data-tilt>
+          <span class="tool-icon" aria-hidden="true">🎨</span>
+          <div class="flex flex-col gap-2">
+            <h3 class="tool-name">Canva</h3>
+            <span class="tool-badge tool-badge--teal">Design</span>
+          </div>
+          <p class="tool-blurb">For designing app icons and store listing images. Quick, professional results without needing Figma expertise.</p>
+        </article>
+
+        <!-- 7 — ChatGPT -->
+        <article class="tool-card reveal group" data-tilt>
+          <span class="tool-icon" aria-hidden="true">🤖</span>
+          <div class="flex flex-col gap-2">
+            <h3 class="tool-name">ChatGPT</h3>
+            <span class="tool-badge tool-badge--purple">AI Image Gen</span>
+          </div>
+          <p class="tool-blurb">Since GPT image 2 launched, I use it for generating app icons and store listing visuals. Fast iterations, unique results.</p>
+        </article>
+
+        <!-- 8 — AppVed -->
+        <article class="tool-card reveal group" data-tilt>
+          <span class="tool-icon" aria-hidden="true">✅</span>
+          <div class="flex flex-col gap-2">
+            <h3 class="tool-name">AppVed</h3>
+            <span class="tool-badge tool-badge--yellow">Store Audit</span>
+          </div>
+          <p class="tool-blurb">Audits my store listing and tells me what to improve, icon, screenshots, keywords, description. Like having an ASO consultant on demand.</p>
+        </article>
+
+        <!-- 9 — Claude (featured) -->
+        <article class="tool-card tool-card--featured reveal group" data-tilt>
+          <span class="tool-icon" aria-hidden="true">⭐</span>
+          <div class="flex flex-col gap-2">
+            <h3 class="tool-name">Claude <span aria-hidden="true">⭐</span></h3>
+            <span class="tool-badge tool-badge--gold">Most Used</span>
+          </div>
+          <p class="tool-blurb">My #1 tool. Used for project planning, coding, optimization, security reviews, writing store descriptions, basically my AI co-pilot for everything.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="border-t border-white/5">
+    <div class="mx-auto max-w-6xl px-5 sm:px-8 py-12 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl overflow-hidden ring-1 ring-white/10">
+          <img src="/assets/logo.jpg" alt="TDevelopers" class="h-full w-full object-cover" />
+        </span>
+        <div>
+          <div class="font-display font-bold text-white">TDevelopers</div>
+          <div class="text-xs text-white/45">Copyrights© <span id="yr"></span></div>
+        </div>
+      </div>
+      <div class="text-sm text-white/55 flex flex-wrap gap-x-6 gap-y-2">
+        <a href="/#apps" class="hover:text-white transition">Apps</a>
+        <a href="/#about" class="hover:text-white transition">About</a>
+        <a href="/#values" class="hover:text-white transition">Principles</a>
+        <a href="mailto:hello@tdevelopers.in" class="hover:text-white transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/apps.js?v=20260623"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
