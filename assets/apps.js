@@ -3,6 +3,16 @@
 
 const apps = [
   {
+    name: "MeFace AI",
+    tagline: "Face Shape Detector",
+    blurb: "Analyze your face shape and find hairstyles, beard styles & glasses that suit you.",
+    rating: 4.2,
+    downloads: "New",
+    category: "Beauty",
+    icon: "assets/icons/meface.png",
+    play: "https://play.google.com/store/apps/details?id=com.ai.face.shape.detector.meface"
+  },
+  {
     name: "Tattoi",
     tagline: "AI Tattoo Generator",
     blurb: "Design your next tattoo in seconds. Type any idea and AI generates tattoo art and stencils — see your ink before you commit.",
@@ -46,10 +56,10 @@ const apps = [
   },
   {
     name: "Sooz",
-    tagline: "Breathwork & Calm",
+    tagline: "Breathing Exercises",
     blurb: "A simple breathing app for stress, sleep and focus. No clutter — just breath.",
-    rating: 4.5,
-    downloads: "10+",
+    rating: 4.3,
+    downloads: "50+",
     category: "Health & Fitness",
     icon: "assets/icons/breava.png",
     play: "https://play.google.com/store/apps/details?id=com.tdevs.respira.breathing",
@@ -59,8 +69,8 @@ const apps = [
     name: "Appixa",
     tagline: "AI Photo Enhancer",
     blurb: "Enhance, restore and transform photos with template-based AI editing.",
-    rating: 4.2,
-    downloads: "500+",
+    rating: 3.5,
+    downloads: "1K+",
     category: "Photography",
     icon: "assets/icons/appixa.png",
     play: "https://play.google.com/store/apps/details?id=ai.photo.editor.appixa.photoenhancer",
@@ -88,11 +98,11 @@ const apps = [
     play: "https://play.google.com/store/apps/details?id=com.imiss.ai.girlfriend.simulator"
   },
   {
-    name: "BMatrix AI",
-    tagline: "Body Fitness Check",
+    name: "Body Metrics",
+    tagline: "AI Body Scanner",
     blurb: "AI-powered body scan — posture, symmetry and fitness insights from one photo.",
     rating: 4.3,
-    downloads: "100+",
+    downloads: "500+",
     category: "Health & Fitness",
     icon: "assets/icons/bmatrix.png",
     play: "https://play.google.com/store/apps/details?id=com.tdevelopers.bmatrix_ai",
