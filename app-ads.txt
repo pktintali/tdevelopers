@@ -1,0 +1,4 @@
+# Authorised sellers of ad inventory for tdevelopers apps.
+# One file covers every app whose store listing names this domain as its
+# developer website — the entries below are per ad account, not per app.
+google.com, pub-5861053171904035, DIRECT, f08c47fec0942fa0
