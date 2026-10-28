@@ -4,3 +4,4 @@
 google.com, pub-5861053171904035, DIRECT, f08c47fec0942fa0
 inmobi.com, a8fd95d25ffc464d8bc8547706b35a3d, DIRECT, 83e75a7ae333ca9d
 pubmatic.com, 159856, DIRECT, 5d62403b186f2ace
+facebook.com, 1777943269833152, DIRECT, c3e20eee3f780d68
