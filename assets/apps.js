@@ -3,6 +3,16 @@
 
 const apps = [
   {
+    name: "Astrohal",
+    tagline: "AI Astrology & Kundli",
+    blurb: "Your kundli, daily horoscope and kundli milan, plus an AI astrologer who reads your own chart.",
+    rating: 3.6,
+    downloads: "500+",
+    category: "Lifestyle",
+    icon: "https://play-lh.googleusercontent.com/8H-8KnhX4ObsaqmIl2mydS3v-lk9M3DrctvG38p-zm5OFCSvaBOWoAdjW8yyCgug8-b_wKr-hgsZXp94MFY=s256",
+    play: "https://play.google.com/store/apps/details?id=com.tdevs.ai.astrology.astrohal"
+  },
+  {
     name: "MeFace AI",
     tagline: "Face Shape Detector",
     blurb: "Analyze your face shape and find hairstyles, beard styles & glasses that suit you.",
