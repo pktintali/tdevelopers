@@ -3,6 +3,9 @@ module.exports = {
   content: [
     './index.html',
     './imiss/**/*.html',
+    './appixa/**/*.html',
+    './tattoi/**/*.html',
+    './astrohal/**/*.html',
     './assets/**/*.js'
   ],
   theme: {
