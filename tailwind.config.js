@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     './index.html',
+    './imiss/**/*.html',
     './assets/**/*.js'
   ],
   theme: {

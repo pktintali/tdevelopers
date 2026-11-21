@@ -89,12 +89,12 @@ const apps = [
   },
   {
     name: "Imiss",
-    tagline: "Caring AI Girlfriend",
+    tagline: "Sweet AI Girlfriend",
     blurb: "A warm, playful AI girlfriend who chats, calls and makes moments feel real.",
     rating: 4.6,
     downloads: "New",
     category: "Entertainment",
-    icon: "assets/icons/imiss.png",
+    icon: "assets/icons/imiss.png?v=20261121",
     play: "https://play.google.com/store/apps/details?id=com.imiss.ai.girlfriend.simulator"
   },
   {
