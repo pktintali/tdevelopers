@@ -3,6 +3,15 @@
 
 const apps = [
   {
+    name: "Kozzu",
+    tagline: "Self-Care Companion",
+    blurb: "A cozy companion to talk to, check in with and unwind with. Kozzu remembers what matters to you and grows as you take care of yourself.",
+    category: "Health & Fitness",
+    icon: "assets/icons/kozzu.png",
+    page: "/kozzu/",
+    comingSoon: true
+  },
+  {
     name: "Astrohal",
     tagline: "AI Astrology & Kundli",
     blurb: "Your kundli, daily horoscope and kundli milan, plus an AI astrologer who reads your own chart.",
@@ -135,6 +144,10 @@ function ratingRow(r) {
 
 function storeBadges(app) {
   const items = [];
+  // Not in a store yet: say so where the store badges would sit.
+  if (app.comingSoon && !app.play && !app.appstore) {
+    items.push(`<span class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 text-xs font-medium text-white/85">Coming soon</span>`);
+  }
   if (app.play) {
     items.push(`<a href="${app.play}" target="_blank" rel="noopener" aria-label="Get on Google Play"
       class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.09] border border-white/10 px-3 py-1.5 text-xs font-medium text-white/85 hover:text-white transition" onclick="event.stopPropagation()">
@@ -161,7 +174,7 @@ function storeBadges(app) {
 }
 
 function appCard(app) {
-  const primary = app.play || app.appstore;
+  const primary = app.play || app.appstore || app.page;
   return `
     <div class="app-card reveal group" data-href="${primary}" data-tilt tabindex="0" role="link" aria-label="${app.name}">
       <div class="flex items-start gap-4">
@@ -195,17 +208,22 @@ const grid = document.getElementById('apps-grid');
 if (grid) {
   grid.innerHTML = apps.map(appCard).join('');
   // make whole card clickable (outer is a div so inner store links still work)
+  // Store links open in a new tab; our own pages (e.g. /kozzu/) open here.
+  const openCard = (href) => {
+    if (href.startsWith('/')) window.location.href = href;
+    else window.open(href, '_blank', 'noopener');
+  };
   grid.querySelectorAll('[data-href]').forEach(card => {
     card.style.cursor = 'pointer';
     card.addEventListener('click', (e) => {
       // ignore clicks on inner anchors / their children
       if (e.target.closest('a')) return;
-      window.open(card.dataset.href, '_blank', 'noopener');
+      openCard(card.dataset.href);
     });
     card.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        window.open(card.dataset.href, '_blank', 'noopener');
+        openCard(card.dataset.href);
       }
     });
   });

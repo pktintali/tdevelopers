@@ -6,6 +6,7 @@ module.exports = {
     './appixa/**/*.html',
     './tattoi/**/*.html',
     './astrohal/**/*.html',
+    './kozzu/**/*.html',
     './assets/**/*.js'
   ],
   theme: {
