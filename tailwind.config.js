@@ -7,6 +7,7 @@ module.exports = {
     './tattoi/**/*.html',
     './astrohal/**/*.html',
     './kozzu/**/*.html',
+    './consult/**/*.html',
     './assets/**/*.js'
   ],
   theme: {
