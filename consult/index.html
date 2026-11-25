@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/tailwind.css?v=2026112503" />
+  <link rel="stylesheet" href="/assets/tailwind.css?v=2026112504" />
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body class="bg-ink-950 text-white font-sans antialiased">
@@ -60,17 +60,23 @@
       <section id="booking" class="mt-14 scroll-mt-6" aria-label="Book a session">
 
         <ol class="grid grid-cols-3 gap-2 sm:gap-3">
-          <li data-step-indicator="1" class="group flex flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left rounded-2xl border border-white/10 bg-ink-900 px-2 py-3 sm:px-4 text-white/45 aria-[current=step]:border-brand-500/60 aria-[current=step]:text-white data-[done=true]:text-white/70">
-            <span class="step-num grid h-7 w-7 shrink-0 place-items-center rounded-full border border-white/15 text-sm font-semibold group-aria-[current=step]:border-brand-500 group-aria-[current=step]:bg-brand-500 group-aria-[current=step]:text-white group-data-[done=true]:border-white/30">1</span>
-            <span class="text-xs sm:text-sm font-semibold leading-tight">Pick a slot</span>
+          <li>
+            <button type="button" data-step-target="1" class="step-btn group flex h-full w-full flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left rounded-2xl border border-white/10 bg-ink-900 px-2 py-3 sm:px-4 text-white/45 transition enabled:hover:border-white/25 disabled:cursor-not-allowed aria-[current=step]:border-brand-500/60 aria-[current=step]:text-white data-[done=true]:text-white/70 data-[ready=true]:border-brand-500/40 data-[ready=true]:text-white">
+              <span class="step-num grid h-7 w-7 shrink-0 place-items-center rounded-full border border-white/15 text-sm font-semibold group-aria-[current=step]:border-brand-500 group-aria-[current=step]:bg-brand-500 group-aria-[current=step]:text-white group-data-[done=true]:border-white/30 group-data-[ready=true]:border-brand-500 group-data-[ready=true]:text-brand-400">1</span>
+              <span class="text-xs sm:text-sm font-semibold leading-tight">Pick a slot</span>
+            </button>
           </li>
-          <li data-step-indicator="2" class="group flex flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left rounded-2xl border border-white/10 bg-ink-900 px-2 py-3 sm:px-4 text-white/45 aria-[current=step]:border-brand-500/60 aria-[current=step]:text-white data-[done=true]:text-white/70">
-            <span class="step-num grid h-7 w-7 shrink-0 place-items-center rounded-full border border-white/15 text-sm font-semibold group-aria-[current=step]:border-brand-500 group-aria-[current=step]:bg-brand-500 group-aria-[current=step]:text-white group-data-[done=true]:border-white/30">2</span>
-            <span class="text-xs sm:text-sm font-semibold leading-tight">Pay via UPI</span>
+          <li>
+            <button type="button" data-step-target="2" class="step-btn group flex h-full w-full flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left rounded-2xl border border-white/10 bg-ink-900 px-2 py-3 sm:px-4 text-white/45 transition enabled:hover:border-white/25 disabled:cursor-not-allowed aria-[current=step]:border-brand-500/60 aria-[current=step]:text-white data-[done=true]:text-white/70 data-[ready=true]:border-brand-500/40 data-[ready=true]:text-white">
+              <span class="step-num grid h-7 w-7 shrink-0 place-items-center rounded-full border border-white/15 text-sm font-semibold group-aria-[current=step]:border-brand-500 group-aria-[current=step]:bg-brand-500 group-aria-[current=step]:text-white group-data-[done=true]:border-white/30 group-data-[ready=true]:border-brand-500 group-data-[ready=true]:text-brand-400">2</span>
+              <span class="text-xs sm:text-sm font-semibold leading-tight">Pay via UPI</span>
+            </button>
           </li>
-          <li data-step-indicator="3" class="group flex flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left rounded-2xl border border-white/10 bg-ink-900 px-2 py-3 sm:px-4 text-white/45 aria-[current=step]:border-brand-500/60 aria-[current=step]:text-white data-[done=true]:text-white/70">
-            <span class="step-num grid h-7 w-7 shrink-0 place-items-center rounded-full border border-white/15 text-sm font-semibold group-aria-[current=step]:border-brand-500 group-aria-[current=step]:bg-brand-500 group-aria-[current=step]:text-white group-data-[done=true]:border-white/30">3</span>
-            <span class="text-xs sm:text-sm font-semibold leading-tight">Get confirmed</span>
+          <li>
+            <button type="button" data-step-target="3" class="step-btn group flex h-full w-full flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left rounded-2xl border border-white/10 bg-ink-900 px-2 py-3 sm:px-4 text-white/45 transition enabled:hover:border-white/25 disabled:cursor-not-allowed aria-[current=step]:border-brand-500/60 aria-[current=step]:text-white data-[done=true]:text-white/70 data-[ready=true]:border-brand-500/40 data-[ready=true]:text-white">
+              <span class="step-num grid h-7 w-7 shrink-0 place-items-center rounded-full border border-white/15 text-sm font-semibold group-aria-[current=step]:border-brand-500 group-aria-[current=step]:bg-brand-500 group-aria-[current=step]:text-white group-data-[done=true]:border-white/30 group-data-[ready=true]:border-brand-500 group-data-[ready=true]:text-brand-400">3</span>
+              <span class="text-xs sm:text-sm font-semibold leading-tight">Get confirmed</span>
+            </button>
           </li>
         </ol>
 
@@ -93,6 +99,19 @@
             </div>
           </div>
 
+          <div id="booked-banner" class="mt-6 scroll-mt-6" hidden>
+            <div class="flex flex-col gap-4 rounded-2xl border border-emerald-500/30 bg-emerald-500/10 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <div class="font-semibold text-emerald-300">Slot requested. One step left.</div>
+                <p class="mt-1 text-sm text-white/70">Pay via UPI so Pradeep can confirm your booking.</p>
+              </div>
+              <button type="button" data-go="2" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-ink-950 hover:bg-white/90 transition">
+                Continue to payment
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+
           <div class="mt-6 overflow-hidden rounded-3xl border border-white/10 bg-ink-900">
             <div id="cal-15" class="min-h-[640px]"></div>
             <div id="cal-30" class="min-h-[640px]" hidden></div>
@@ -103,8 +122,7 @@
               Calendar not loading? <a href="https://cal.com/pradeep.agi/15-min-consultation" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-white">Book 15 min</a>
               or <a href="https://cal.com/pradeep.agi/30-min-consultation" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-white">book 30 min</a> on Cal.com.
             </p>
-            <div class="flex flex-col items-stretch gap-2 sm:items-end">
-              <p id="booked-hint" class="text-sm text-emerald-400" hidden>Slot requested. Next, pay to secure it.</p>
+            <div class="flex flex-col items-stretch sm:items-end">
               <button type="button" data-go="2" class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-ink-950 hover:bg-white/90 transition">
                 Next: Pay via UPI
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -221,13 +239,24 @@
         hideEventTypeDetails: false,
         layout: "month_view"
       });
+      // Cal re-fires every event under "*"; matching the type prefix covers both
+      // bookingSuccessful and bookingSuccessfulV2.
       Cal.ns[ns]("on", {
-        action: "bookingSuccessful",
-        callback: () => {
-          selectDuration(duration);
-          document.getElementById("booked-hint").hidden = false;
+        action: "*",
+        callback: (e) => {
+          const type = (e && e.detail && e.detail.type) || "";
+          if (type.startsWith("bookingSuccessful")) onBooked(duration);
         }
       });
+    }
+
+    function onBooked(duration) {
+      selectDuration(duration);
+      unlock(2);
+      const banner = document.getElementById("booked-banner");
+      if (!banner.hidden) return;
+      banner.hidden = false;
+      banner.scrollIntoView({ behavior: "smooth", block: "center" });
     }
 
     function selectDuration(duration) {
@@ -242,17 +271,33 @@
       mount(duration);
     }
 
+    let currentStep = 1;
+    let maxStep = 1;
+
+    function renderStepper() {
+      document.querySelectorAll(".step-btn").forEach((btn) => {
+        const n = Number(btn.dataset.stepTarget);
+        btn.disabled = n > maxStep;
+        if (n === currentStep) btn.setAttribute("aria-current", "step");
+        else btn.removeAttribute("aria-current");
+        btn.dataset.done = String(n < currentStep);
+        btn.dataset.ready = String(n > currentStep && n <= maxStep);
+        btn.querySelector(".step-num").textContent = n < currentStep ? "✓" : n;
+      });
+    }
+
+    function unlock(step) {
+      maxStep = Math.max(maxStep, step);
+      renderStepper();
+    }
+
     function goTo(step, scroll = true) {
+      currentStep = step;
+      maxStep = Math.max(maxStep, step);
       document.querySelectorAll("[data-step]").forEach((panel) => {
         panel.hidden = Number(panel.dataset.step) !== step;
       });
-      document.querySelectorAll("[data-step-indicator]").forEach((item) => {
-        const n = Number(item.dataset.stepIndicator);
-        if (n === step) item.setAttribute("aria-current", "step");
-        else item.removeAttribute("aria-current");
-        item.dataset.done = String(n < step);
-        item.querySelector(".step-num").textContent = n < step ? "✓" : n;
-      });
+      renderStepper();
       if (scroll) booking.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
@@ -261,6 +306,9 @@
     });
     document.querySelectorAll("[data-go]").forEach((btn) => {
       btn.addEventListener("click", () => goTo(Number(btn.dataset.go)));
+    });
+    document.querySelectorAll(".step-btn").forEach((btn) => {
+      btn.addEventListener("click", () => goTo(Number(btn.dataset.stepTarget)));
     });
     const syncPayNext = () => { payNext.disabled = !paid.checked; };
     paid.addEventListener("change", syncPayNext);
